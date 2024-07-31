@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import BannerImg from '../../../assets/images/banner.jpg'
+import BannerImg from '../../../assets/images/bannerTwo.png'
 
 const BannerSec = () => {
     return (

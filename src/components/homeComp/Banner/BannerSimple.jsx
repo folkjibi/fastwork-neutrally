@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const BannerSimple = () => {
     return (
@@ -23,7 +24,7 @@ const BannerSimple = () => {
                         ให้บริการโดย บริษัท กลางหลักประกันออนไลน์ จำกัดแอพพลิเคชั่นที่จะมาเป็นตัวกลาง ดูแลการชำระเงินระหว่างผู้ซื้อ และผู้ขาย
                         สินค้าและบริการในโลกออนไลน์ทุกโซเซียลมิเดีย
                     </p>
-                    <button className="btn-primary">อ่านเพิ่มเติม</button>
+                    <Link to="/about" className="btn-primary">อ่านเพิ่มเติม</Link>
                 </div>
             </div>
         </div>
