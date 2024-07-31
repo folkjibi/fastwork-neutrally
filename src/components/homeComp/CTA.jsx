@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaApple } from "react-icons/fa";
 import { BiLogoPlayStore } from "react-icons/bi";
+import { Link } from 'react-router-dom';
 
 const CTA = () => {
     return (
@@ -12,10 +13,10 @@ const CTA = () => {
             <div className="flex md:ml-auto md:mr-0 mx-auto items-center flex-shrink-0 space-x-4">
                 <button className="bg-green-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-green-200 focus:outline-none">
                     <BiLogoPlayStore className="w-8 h-8" />
-                    <span className="ml-4 flex items-start flex-col leading-none">
+                    <Link to="https://play.google.com/store/apps/details?id=com.app.neutrally_guarantee" target="_blank" className="ml-4 flex items-start flex-col leading-none">
                         <span className="text-xs text-green-600 mb-1">GET IT ON</span>
                         <span className="title-font font-medium">Google Play</span>
-                    </span>
+                    </Link>
                 </button>
                 <button className="bg-green-100 inline-flex py-3 px-5 rounded-lg items-center hover:bg-green-200 focus:outline-none">
                     <FaApple className="w-8 h-8" />
