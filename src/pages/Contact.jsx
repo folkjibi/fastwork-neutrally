@@ -6,7 +6,7 @@ import Form from '../components/contactComp/Form'
 const Contact = () => {
     return (
         <section className="text-gray-600 body-font relative">
-            <div className="container px-5 py-24 mx-auto flex flex-wrap sm:flex-nowrap">
+            <div className="container px-5 md:px-10 py-24 mx-auto flex flex-wrap sm:flex-nowrap">
                 <div className="relative flex items-end justify-start bg-gray-300 rounded-lg overflow-hidden p-10 lg:w-2/3 md:w-1/2 sm:mr-10">
                     {/* Map Content */}
                     <MapForm />

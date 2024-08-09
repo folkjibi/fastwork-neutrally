@@ -6,7 +6,7 @@ const ResponsiveNavbar = ({ showMenu, handleLinkClick }) => {
         <div className={`${showMenu ? "left-0" : "-left-[100%]"} h-screen w-[75%] bg-white fixed top-0 z-50 transition-all duration-500 pt-24 pb-6 px-8 flex justify-between border-e border-secondary`}>
             <div>
                 <nav>
-                    <ul className="space-y-4">
+                    <ul className="space-y-6">
                         <li>
                             <Link to="/home" onClick={handleLinkClick}>
                                 หน้าแรก
@@ -20,6 +20,11 @@ const ResponsiveNavbar = ({ showMenu, handleLinkClick }) => {
                         <li>
                             <Link to="/faq" onClick={handleLinkClick}>
                                 คำถามที่พบบ่อย
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/policy" onClick={handleLinkClick}>
+                                นโยบาย
                             </Link>
                         </li>
                         <li>

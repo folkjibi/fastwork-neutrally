@@ -6,7 +6,7 @@ import HeroImg from '../../assets/images/hero.svg'
 const Hero = () => {
     return (
         <div className="container mx-auto flex md:px-10 py-24 flex-col md:flex-row items-center">
-            <div className="flex flex-col lg:flex-grow mb-16 items-center md:items-start text-center md:text-left md:w-1/2 lg:pr-24 md:pr-10">
+            <div className="flex flex-col lg:flex-grow mb-16 items-center md:items-start text-center md:text-left md:w-1/2 px-2 lg:pr-24 md:pr-10">
                 <h1 className="title-font text-3xl sm:text-4xl mb-4 font-medium text-gray-900">
                     จัดการบัญชีกลางของคุณได้ง่ายๆ ทุกที่ทุกเวลา
                     <br className="hidden lg:inline-block" /> ผ่านแอป บัญชีกลาง บน Play Store

@@ -4,7 +4,7 @@ import Content from '../components/aboutComp/Content'
 const About = () => {
     return (
         <div>
-            <div className="container text-gray-600 body-font pt-20">
+            <div className="container mx-auto md:px-10 text-gray-600 body-font pt-20">
                 <div className="container pt-6 px-2 mx-auto">
                     <div className="flex flex-col text-center w-full mb-10 sm:mb-20">
                         <h2 className="text-lg text-green-500 tracking-widest font-medium title-font mb-1">เกี่ยวกับเรา</h2>

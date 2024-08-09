@@ -34,7 +34,7 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <ul className="flex items-center space-x-10">
+            <ul className="flex items-center space-x-8">
               <li>
                 <Link to="/home" className="hover:text-secondary">
                   หน้าแรก
@@ -48,6 +48,11 @@ const Navbar = () => {
               <li>
                 <Link to="/faq" className="hover:text-secondary">
                   คำถาม
+                </Link>
+              </li>
+              <li>
+                <Link to="/policy" className="hover:text-secondary">
+                  นโยบาย
                 </Link>
               </li>
               <li>
