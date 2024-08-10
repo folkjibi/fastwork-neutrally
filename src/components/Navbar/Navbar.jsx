@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <>
       <header className="fixed top-0 left-0 right-0 z-[99] text-black bg-white border-b-[1px] border-secondary">
-        <nav className="container flex h-[70px] items-center justify-between py-2">
+        <nav className="container flex h-[70px] items-center justify-between py-2 px-2">
           <div className="text-2xl md:text-3xl">
             <Link to="/" className="inline-block font-bold text-primary">
               <div className="flex space-x-2">
