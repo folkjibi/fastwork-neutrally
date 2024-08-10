@@ -1,5 +1,7 @@
 import React from 'react'
 import { HiBadgeCheck } from "react-icons/hi";
+import { contentMenu, content_1 } from "../../data/Cookies"
+
 const Cookies = () => {
     return (
         <div className="relative container mx-auto isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
@@ -15,6 +17,7 @@ const Cookies = () => {
                         </div>
                     </div>
                 </div>
+
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:grid lg:w-full lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
                         <h2 className="text-lg sm:text-3xl font-medium">คุกกี้คืออะไร?</h2>
@@ -30,68 +33,48 @@ const Cookies = () => {
                                     </p>
                                 </div>
                                 <div className="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2">
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">
-                                                อินเตอร์เน็ต โดเมนและ IP Address จากจุดที่ท่านเข้าสู่เว็บไซต์
-                                            </span>
+                                    {contentMenu.map((menu) => (
+                                        <div className="p-2 sm:w-1/2 w-full" key={menu.id}>
+                                            <div className="bg-gray-100 rounded flex p-4 h-full items-center">
+                                                <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
+                                                <span className="title-font font-medium">{menu.description}</span>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">
-                                                ประเภทของบราว์เซอร์ซอฟแวร์ ตลอดจนโครงสร้างและระบบการปฎิบัติงานที่ใช้ในการเข้าสู่เว็บไซต์
-                                            </span>
-                                        </div>
-                                    </div>
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">วันที่และเวลาที่ท่านเข้าสู่เว็บไซต์</span>
-                                        </div>
-                                    </div>
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">ที่อยู่ของเว็บไซต์อื่นที่เชื่อมโยงท่านเข้าสู่เว็บไซต์ของเรา</span>
-                                        </div>
-                                    </div>
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">หน้าเว็บที่เข้าเยี่ยมชม และนำท่านออกจากเว็บไซต์ของเรา</span>
-                                        </div>
-                                    </div>
-                                    <div className="p-2 sm:w-1/2 w-full">
-                                        <div className="bg-gray-100 rounded flex p-4 h-full items-center">
-                                            <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
-                                            <span className="title-font font-medium">เนืัอหาบนหน้าเว็บที่ท่านเยี่ยมชมและระยะเวลาที่ท่านใช้ในการเยี่ยมชม</span>
-                                        </div>
-                                    </div>
+                                    ))}
                                 </div>
                             </div>
 
                             <div className="container px-4 py-8 mx-auto">
-                                <p class="text-base font-medium mb-4">ประเภทของคุกกี้ที่เราใช้และในการใช้คุกกี้ดังกล่าว ประกอบด้วย แต่ไม่จำกัดเพียงรายการต่อไปนี้</p>
-
-                                <div className="list-item mb-4">
-                                    <span>คุกกี้ประเภทที่มีความจำเป็นอย่างยิ่ง (Strictly Necessary Cookies)</span>
-                                    <p>
-                                        คุกกี้ประเภทนี้มีความสำคัญต่อการทำงานของเว็บไซต์ ซึ่งรวมถึงคุกกี้ที่ทำให้ท่านสามารถเข้าถึงข้อมูลและใช้งานในเว็บไซต์ของเราได้อย่างปลอดภัย
-                                    </p>
-                                </div>
-                                <div className="list-item mb-4">
-                                    <span>คุกกี้เพื่อการวิเคราะห์/วัดผลการทำงานของเว็บไซต์ (Analytical/Performance Cookies)</span>
-                                    <p>
-                                        คุกกี้ประเภทนี้มีความสำคัญต่อการทำงานของเว็บไซต์ ซึ่งรวมถึงคุกกี้ที่ทำให้ท่านสามารถเข้าถึงข้อมูลและใช้งานในเว็บไซต์ของเราได้อย่างปลอดภัย
-                                    </p>
-                                </div>
+                                <p className="text-base font-medium mb-4">ประเภทของคุกกี้ที่เราใช้และในการใช้คุกกี้ดังกล่าว ประกอบด้วย แต่ไม่จำกัดเพียงรายการต่อไปนี้</p>
+                                {content_1.map((content) => (
+                                    <div className="list-item mb-4" key={content.id}>
+                                        <span>{content.title}</span>
+                                        <p>{content.description}</p>
+                                    </div>
+                                ))}
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="flex flex-col text-center w-full">
+                <p className="mx-auto leading-relaxed text-base">
+                    โปรดทราบว่าคุกกี้บางประเภทในเว็บไซต์นี้จัดการโดยบุคคลที่สาม เช่น เครื่อข่ายการโฆษณา ลักษณะการทำงานต่างๆ อาทิ วิดีโอ แผนที่ และโซเซียลมีเดีย และผู้ให้ยริการเว็บไซต์ภายนอกอื่นๆ เช่น บริการวิเคราะห์/วัดผลการทำงาน หรือคุกกี้เพื่อปรับเนื้อหาเข้ากับกลุ่มเป้าหมาย ท่านควรต้องศึกษานโยบายการใช้คุกกี้และนโยบายส่วนบุคคลในเว็บไซต์ของบุคคลที่สาม เพื่อให้เข้าใจถึงวิธีการที่บุคคลที่สามอาจนำข้อมูลของท่านไปใช้
+                </p>
+            </div>
+
+            <div className="text-center w-full mb-10">
+                <h1 className="text-2xl font-medium title-font mt-10 text-gray-900 tracking-widest">การตั้งค่าคุกกี้</h1>
+                <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
+                    ท่านสามารถบล็อกการทำงานของคุกกี้ได้โดยการกำหนดค่าในบราว์เซอร์ของท่าน ซึ่งท่านอาจจะปฎิเสธติดตั้งคุกกี้ทั้งหมดหรือบางประเภทกฌได้ แต่พึงตระหนักว่าหากท่านตั้งค่าบราว์เซอร์ของท่านด้วยการบล็อคคุกกี้ทั้งหมด (รวมถึงคุกกี้ที่จำเป็นต่อการใช้งาน) ท่านอาจจะไม่สามารถเข้าสู่เว็บไซต์ทั้งหมดหรือบางส่วนของเราได้
+                </p>
+            </div>
+
+            <div className="text-center w-full">
+                <p className="mx-auto leading-relaxed text-base">
+                    เมื่อใดก็ตามที่ท่านต้องการยกเลิกความยินยอมการใช้งานคุกกี้ ท่านจะต้องตั้งค่าบราว์เซอร์ของท่านเพื่อให้ลบคุกกี้ออกจากแต่ละบราว์เซอร์ที่ท่านใช้งาน
+                </p>
             </div>
         </div>
     )
