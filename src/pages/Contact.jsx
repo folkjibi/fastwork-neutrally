@@ -22,7 +22,7 @@ const Contact = () => {
                                 neutrallyguarantee@gmail.com
                             </Link>
                             <h2 className="title-font font-semibold text-gray-900 tracking-widest text-xs mt-4">PHONE</h2>
-                            <Link to="tel:+661111111111">123-456-7890</Link>
+                            <Link to="tel:+66821147724">082-114-7724</Link>
                         </div>
                     </div>
                 </div>

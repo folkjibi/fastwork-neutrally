@@ -9,7 +9,7 @@ const Cookies = () => {
                 <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:grid lg:w-full lg:gap-x-8 lg:px-8">
                     <div className="lg:pr-4">
                         <div className="lg:w-full text-center">
-                            <p className="text-lg font-medium leading-7 text-green-500">บัญชีกลาง</p>
+                            <h2 className="text-lg font-medium leading-7 text-green-500">บัญชีกลาง</h2>
                             <h1 className="my-2 text-lg sm:text-3xl font-medium tracking-tight text-gray-900">ประกาศการใช้งานคุกกี้</h1>
                             <p className="text-base mx-auto leading-relaxed lg:w-2/3 text-gray-700">
                                 เว็บไซต์นี้ให้บริการโดยบริษัท กลางหลักประกันออนไลน์ จำกัด เว็บไซต์นี้ใช้คุกกี้และเครื่องมืออื่น เช่น Google Analytics เพื่อช่วยแยกแยะรูปแบบการใช้งานเว็บไซต์ของท่านจากผู้ใช้งานอื่นๆ ซึ่งจะช่วยให้ท่านได้รับประสบการณ์ที่ดีจากการใช้งานเว็บไซต์ และช่วยให้เราสามารถพัฒนาคุณภาพของเว็บไซต์ให้ดียิ่งขึ้น กรณีที่ท่านใช้งานเว็บไซต์นี้ต่อไป ถือว่าท่านได้ยินยอมให้เราติดตั้งคุกกี้ไว้ในเครื่องคอมพิวเตอร์ หรืออุปกรณ์อื่นใดที่เข้าถึงเว็บไซต์นี้ของท่าน
@@ -33,8 +33,8 @@ const Cookies = () => {
                                     </p>
                                 </div>
                                 <div className="flex flex-wrap lg:w-full sm:mx-auto sm:mb-2 -mx-2">
-                                    {contentMenu.map((menu) => (
-                                        <div className="p-2 sm:w-1/2 w-full" key={menu.id}>
+                                    {contentMenu.map((menu, index) => (
+                                        <div className="p-2 sm:w-1/2 w-full" key={index}>
                                             <div className="bg-gray-100 rounded flex p-4 h-full items-center">
                                                 <HiBadgeCheck className="text-green-500 w-6 h-6 flex-shrink-0 mr-4" />
                                                 <span className="title-font font-medium">{menu.description}</span>
@@ -46,8 +46,8 @@ const Cookies = () => {
 
                             <div className="container px-4 py-8 mx-auto">
                                 <p className="text-base font-medium mb-4">ประเภทของคุกกี้ที่เราใช้และในการใช้คุกกี้ดังกล่าว ประกอบด้วย แต่ไม่จำกัดเพียงรายการต่อไปนี้</p>
-                                {content_1.map((content) => (
-                                    <div className="list-item mb-4" key={content.id}>
+                                {content_1.map((content, index) => (
+                                    <div className="list-item mb-4" key={index}>
                                         <span>{content.title}</span>
                                         <p>{content.description}</p>
                                     </div>
@@ -73,7 +73,7 @@ const Cookies = () => {
 
             <div className="text-center w-full">
                 <p className="mx-auto leading-relaxed text-base">
-                    เมื่อใดก็ตามที่ท่านต้องการยกเลิกความยินยอมการใช้งานคุกกี้ ท่านจะต้องตั้งค่าบราว์เซอร์ของท่านเพื่อให้ลบคุกกี้ออกจากแต่ละบราว์เซอร์ที่ท่านใช้งาน
+                    <b>เมื่อใดก็ตามที่ท่านต้องการยกเลิกความยินยอมการใช้งานคุกกี้ ท่านจะต้องตั้งค่าบราว์เซอร์ของท่านเพื่อให้ลบคุกกี้ออกจากแต่ละบราว์เซอร์ที่ท่านใช้งาน</b>
                 </p>
             </div>
         </div>

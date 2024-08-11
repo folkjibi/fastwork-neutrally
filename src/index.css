@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .containerPrivates {
+        @apply container mx-auto px-4 py-4;
+    }
+}
+
 @layer utilities {
     .btn-primary {
         @apply rounded-md border-2 border-none bg-black px-4 py-2 text-sm text-white transition-colors duration-300 hover:bg-white hover:text-black;
