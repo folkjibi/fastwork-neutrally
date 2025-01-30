@@ -20,10 +20,10 @@ const CTA = () => {
                 </button>
                 <button className="bg-green-100 inline-flex py-3 px-2 rounded-lg items-center hover:bg-green-200 focus:outline-none">
                     <FaApple className="w-8 h-8" />
-                    <span className="ml-4 flex items-start flex-col leading-none">
+                    <Link to="https://apps.apple.com/app/บ-ญช-กลาง/id6741061564" target="_blank" className="ml-4 flex items-start flex-col leading-none">
                         <span className="text-xs text-green-600 mb-1">GET IT ON</span>
                         <span className="title-font font-medium">App Store</span>
-                    </span>
+                    </Link>
                 </button>
             </div>
         </div>
